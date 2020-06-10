@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Memory Card Game</title>
+
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Font Awesome Icons -->
+      <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+      <!-- Google Fonts -->
+      <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+      <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+      <div class="container">
+          <header>
+            <img class="fp_header" src="img/header.png" alt="Fresh Prince Of Bel-Air" >
+            <h1>Memory Card Game</h1>
+          </header>
+
+          <section class="score-panel">
+          	<ul class="stars">
+          		<li><i class="fa fa-star"></i></li>
+          		<li><i class="fa fa-star"></i></li>
+          		<li><i class="fa fa-star"></i></li>
+          	</ul>
+
+          	<span class="moves">0</span> Moves
+
+            <div id="timer">
+              <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+
+            <div class="restart">
+          		<i class="fa fa-repeat"></i>
+          	</div>
+          </section>
+
+          <section class="deck">
+
+          </section>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal hidden">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 class="modal-title">Congratulations!</h2>
+              <img src="img/fp_winner.jpg" alt="Fresh Prince Winner" width="300" >
+            </div>
+            <div class="modal-body">
+              <ul class="final-stars stars"></ul>
+              <p>Moves: <span class="final-moves"></span></p>
+              <p>Time: <span class="final-time"></span></p>
+            </div>
+            <div class="modal-footer">
+              <button class="play-button">Play again</button>
+            </div>
+          </div>
+      </div>
+
+      <script src="js/app.js"></script>
+  </body>
+</html>
